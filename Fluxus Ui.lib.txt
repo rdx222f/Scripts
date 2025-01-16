@@ -41,6 +41,44 @@ function lib:CreateWindow(title)
     }
     local hidden = false;
 
+    local MainFrame = Create("Frame", {
+    BackgroundColor3 = Color3.fromRGB(19, 21, 25),
+    BorderSizePixel = 0,
+    Size = UDim2.new(0, 600, 0, 300),
+    Position = UDim2.new(0.5, -300, 0.5, -150),
+    Parent = GUI,
+    ClipsDescendants = true
+}, {
+    -- Imagen de fondo
+    Create("ImageLabel", {
+        BackgroundTransparency = 1,
+        Size = UDim2.new(1, 0, 1, 0),
+        Position = UDim2.new(0, 0, 0, 0),
+        Image = "rbxassetid://17247294055",
+        ScaleType = Enum.ScaleType.Cover, 
+        Parent = MainFrame
+    }),
+    Create("UICorner", {
+        CornerRadius = UDim.new(0, 3)
+    }),
+    Create("TextLabel", {
+        BackgroundTransparency = 1,
+        Size = UDim2.new(1, -20, 0, 25),
+        Position = UDim2.new(0, 25, 0, 1),
+        Text = title,
+        Font = Enum.Font.Roboto,
+        TextColor3 = Color3.fromRGB(243, 243, 243),
+        TextSize = 13,
+        TextXAlignment = Enum.TextXAlignment.Left
+    }),
+    Create("ImageLabel", {
+        Position = UDim2.new(0, 3, 0, 3),
+        Size = UDim2.new(0, 20, 0, 20),
+        BackgroundTransparency = 1,
+        Image = "rbxassetid://9483813933"
+    })
+})
+
     local ToolTip = Create("TextLabel", {
         BackgroundColor3 = Color3.fromRGB(13, 14, 16),
         AutomaticSize = Enum.AutomaticSize.XY,
