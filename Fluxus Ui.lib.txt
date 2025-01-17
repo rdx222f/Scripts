@@ -539,7 +539,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color = t1.State and window.AccentColor or Color = Color3.fromRGB(0, 0, 255)
+                        Color = t1.State and window.AccentColor or Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
