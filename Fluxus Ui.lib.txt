@@ -251,7 +251,7 @@ function lib:CreateWindow(title)
         Size = UDim2.new(1, -135, 1, 0),
         ZIndex = 5,
         Parent = Container
-v
+
     })
 
     local selectedPage = nil;
