@@ -92,18 +92,19 @@ function lib:CreateWindow(title)
     end
 
     local MainFrame = Create("Frame", {
+        BackgroundTransparency = 1,
         BackgroundColor3 = Color3.fromRGB(19, 21, 25),
         BorderSizePixel = 0,
         Size = UDim2.new(0, 600, 0, 300),
         Position = UDim2.new(0.5, -300, 0.5, -150),
         Parent = GUI
     }, {
-        Create("ImageLabel", { -- Agregamos un fondo de imagen
+        Create("ImageLabel", { -- Fondo de imagen
         BackgroundTransparency = 1,
         Size = UDim2.new(1, 0, 1, 0),
         Position = UDim2.new(0, 0, 0, 0),
-        Image = "http://www.roblox.com/asset/?id=17247294032", -- Reemplaza con el ID de tu imagen
-        ScaleType = Enum.ScaleType.Stretch -- Ajusta la imagen al tamaño del marco
+        Image = "http://www.roblox.com/asset/?id=17247294032",
+        ScaleType = Enum.ScaleType.Stretch
     }),
         Create("TextLabel", {
             BackgroundTransparency = 1,
