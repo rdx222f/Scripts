@@ -37,7 +37,7 @@ end
 function lib:CreateWindow(title)
     local window = {
         Font = Enum.Font.Code, -- Cambiado a fuente estilo "code"
-        AccentColor = Color3.fromRGB(255, 165, 0) -- Cambiado a color naranja
+        AccentColor = Color3.fromRGB(255, 165, 0) 
     }
     local hidden = false;
 
@@ -69,7 +69,6 @@ function lib:CreateWindow(title)
             Transparency = 1
         })
     })
-    -- Continúa el resto del script
 
     function tooltipFollow()
         RS.RenderStepped:Connect(function()
@@ -117,7 +116,7 @@ function lib:CreateWindow(title)
         Position = UDim2.new(0, 3, 0, 3),
         Size = UDim2.new(0, 20, 0, 20),
         BackgroundTransparency = 1,
-        Image = "rbxassetid://9483813933"
+        Image = "rbxassetid://94386570903573"
     }), Create("UICorner", {
         CornerRadius = UDim.new(0, 3)
     })})
