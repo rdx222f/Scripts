@@ -460,14 +460,14 @@ local b1 = Create("TextButton", {
     BackgroundColor3 = Color3.fromRGB(0, 0, 0), -- Fondo negro
     Size = UDim2.new(1, 0, 0, 30),
     Parent = container,
-    Text = "", -- 
+    Text = "", 
     AutoButtonColor = false,
     LayoutOrder = order
 }, {
     Create("UIStroke", {
         ApplyStrokeMode = 1,
         Color = Color3.fromRGB(128, 0, 128), 
-        Thickness = 2 ñ
+        Thickness = 2 
     }),
     Create("UICorner", {
         CornerRadius = UDim.new(0, 4) 
