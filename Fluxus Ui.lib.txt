@@ -109,15 +109,7 @@ local MainFrame = Create("Frame", {
     ZIndex = 2,
     Parent = GUI
 }, {
-    Create("ImageLabel", { -- Fondo de imagen
-        BackgroundTransparency = 1,
-        Size = UDim2.new(1, 0, 1, 0),
-        Position = UDim2.new(0, 0, 0, 0),
-        Image = "http://www.roblox.com/asset/?id=17247294032", 
-        ScaleType = Enum.ScaleType.Stretch,
-        ZIndex = 1
-    }),
-        Create("TextLabel", {
+            Create("TextLabel", {
             BackgroundTransparency = 1,
             Size = UDim2.new(1, -20, 0, 25),
             Position = UDim2.new(0, 25, 0, 1),
