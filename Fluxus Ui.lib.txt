@@ -14,6 +14,14 @@ GUI.Parent = game.CoreGui;
 GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
 GUI.IgnoreGuiInset = true
 
+-- Fondo con imagen
+local BackgroundImage = Instance.new("ImageLabel", GUI)
+BackgroundImage.Size = UDim2.new(1, 0, 1, 0)
+BackgroundImage.Position = UDim2.new(0, 0, 0, 0)
+BackgroundImage.BackgroundTransparency = 1
+BackgroundImage.Image = "http://www.roblox.com/asset/?id=17247294032" -- Reemplaza con tu ID
+BackgroundImage.ScaleType = Enum.ScaleType.Cover
+
 function Create(instance, properties, children)
     local obj = Instance.new(instance)
     for i, v in pairs(properties or {}) do
