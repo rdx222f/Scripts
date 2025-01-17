@@ -452,12 +452,11 @@ function lib:CreateWindow(title)
             function components:AddButton(buttonTitle, tooltip, callback)
                 tooltip = tooltip or nil
                 callback = callback or function() end
-                local btndebounce = false;
-                
-  
-   local b1 = Create("TextButton", {
-    BackgroundTransparency = 0.2,
-    BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+                local btndebounce = false
+
+ local b1 = Create("TextButton", {
+    BackgroundTransparency = 0.3, 
+    BackgroundColor3 = Color3.fromRGB(0, 0, 0), 
     Size = UDim2.new(1, 0, 0, 30),
     Parent = container,
     Text = "",
@@ -466,33 +465,11 @@ function lib:CreateWindow(title)
 }, {
     Create("UIStroke", {
         ApplyStrokeMode = 1,
-        Color = Color3.fromRGB(128, 0, 128),
-        Thickness = 2
+        Color = Color3.new(1, 1, 1) 
     }),
     Create("UICorner", {
         CornerRadius = UDim.new(0, 4)
-    }),
-    Create("TextLabel", {
-        BackgroundTransparency = 1,
-        Position = UDim2.new(0, 10, 0.5, -8),
-        Size = UDim2.new(1, -10, 0, 14),
-        Font = Enum.Font.RobotoMono,
-        Text = buttonTitle,
-        TextColor3 = Color3.new(1, 1, 1), -- Inicialmente blanco
-        TextSize = 14,
-        TextXAlignment = Enum.TextXAlignment.Left
--- Función para aplicar el efecto de colores aleatorios (arcoíris) en el texto
-local function rainbowColor(label)
-    while true do
-        for hue = 0, 1, 0.01 do
-            label.TextColor3 = Color3.fromHSV(hue, 1, 1)  -- Cambia el color usando HSV
-            wait(0.1)  -- Cambia el color cada 0.1 segundos
-        end
-    end
-end
-
--- Llamar a la función para aplicar el efecto arcoíris al texto del botón
-rainbowColor(b1[2].TextLabel)
+ 
     }),
     Create("TextLabel", {
         BackgroundTransparency = 1, 
