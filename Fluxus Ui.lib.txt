@@ -466,8 +466,8 @@ local b1 = Create("TextButton", {
 }, {
     Create("UIStroke", {
     ApplyStrokeMode = 1,
-    Color = Color3.fromRGB(204, 153, 255),
-    Thickness = 2 
+    Color = Color3.fromRGB(144, 238, 144),
+    Thickness = 2
 }),
     Create("UICorner", {
         CornerRadius = UDim.new(0, 4)
@@ -528,7 +528,8 @@ local b1 = Create("TextButton", {
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color = Color3.fromRGB(24, 25, 30)
+    Color = Color3.fromRGB(144, 238, 144),
+    Thickness = 2
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -606,7 +607,7 @@ local b1 = Create("TextButton", {
                 }, {
                     Create("UIStroke", {
     ApplyStrokeMode = 1,
-    Color = Color3.fromRGB(204, 153, 255),
+    Color = Color3.fromRGB(144, 238, 144),
     Thickness = 2
                     }),
                     Create("UICorner", {
@@ -638,8 +639,9 @@ local b1 = Create("TextButton", {
                     TextWrapped = true
                 }, {
                     Create("UIStroke", {
-                        ApplyStrokeMode = 1,
-                        Color = Color3.fromRGB(0, 0, 255)
+                    ApplyStrokeMode = 1,
+    Color = Color3.fromRGB(144, 238, 144),
+    Thickness = 2
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -682,7 +684,8 @@ local b1 = Create("TextButton", {
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color = Color3.fromRGB(0, 0, 255)
+    Color = Color3.fromRGB(144, 238, 144),
+    Thickness = 2
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
