@@ -456,33 +456,32 @@ function lib:CreateWindow(title)
 
  
 local b1 = Create("TextButton", {
-    BackgroundTransparency = 0.2, 
+    BackgroundTransparency = 0.2, -- Fondo ligeramente transparente
     BackgroundColor3 = Color3.fromRGB(0, 0, 0), -- Fondo negro
     Size = UDim2.new(1, 0, 0, 30),
     Parent = container,
-    Text = "", 
+    Text = "", -- El texto principal está en un TextLabel
     AutoButtonColor = false,
     LayoutOrder = order
 }, {
     Create("UIStroke", {
         ApplyStrokeMode = 1,
-        Color = Color3.fromRGB(128, 0, 128), 
-        Thickness = 2
+        Color = Color3.fromRGB(128, 0, 128), -- Morado (RGB: 128, 0, 128)
+        Thickness = 2 -- Grosor del borde
     }),
     Create("UICorner", {
-        CornerRadius = UDim.new(0, 4) 
+        CornerRadius = UDim.new(0, 4) -- Bordes redondeados
     }),
     Create("TextLabel", {
-        BackgroundTransparency = 1, 
+        BackgroundTransparency = 1, -- Fondo del texto transparente
         Position = UDim2.new(0, 10, 0.5, -8),
         Size = UDim2.new(1, -10, 0, 14),
-        Font = Enum.Font.RobotoMono,
+        Font = Enum.Font.RobotoMono, -- Usa una fuente clara
         Text = buttonTitle,
-        TextColor3 = Color3.new(1, 1, 1), 
+        TextColor3 = Color3.new(1, 1, 1), -- Texto blanco brillante
         TextSize = 14,
         TextXAlignment = Enum.TextXAlignment.Left
-    })
-})
+    }),
                     Create("ImageLabel", {
                         BackgroundTransparency = 1,
                         Position = UDim2.new(1, -30, 0.5, -12),
