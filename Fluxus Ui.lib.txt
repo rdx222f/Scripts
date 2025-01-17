@@ -454,7 +454,7 @@ function lib:CreateWindow(title)
                 callback = callback or function() end
                 local btndebounce = false;
                 local b1 = Create("TextButton", {
-                    BackgroundColor3 = Color3.fromRGB(13, 14, 16),
+                    BackgroundColor3 = 1,
                     Size = UDim2.new(1, 0, 0, 30),
                     Parent = container,
                     Text = "",
@@ -463,7 +463,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color = Color3.fromRGB(24, 25, 30)
+                        Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -514,7 +514,7 @@ function lib:CreateWindow(title)
                 t1.State = default or false;
                 callback = callback or function() end
                 local b1 = Create("TextButton", {
-                    BackgroundColor3 = Color3.fromRGB(13, 14, 16),
+                    BackgroundColor3 = 1,
                     Size = UDim2.new(1, 0, 0, 30),
                     Parent = container,
                     Text = "",
