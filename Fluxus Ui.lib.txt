@@ -454,33 +454,34 @@ function lib:CreateWindow(title)
                 callback = callback or function() end
                 local btndebounce = false
 
- local b1 = Create("TextButton", {
-    BackgroundTransparency = 0.3, 
-    BackgroundColor3 = Color3.fromRGB(0, 0, 0), 
+ 
+local b1 = Create("TextButton", {
+    BackgroundTransparency = 0.2, 
+    BackgroundColor3 = Color3.fromRGB(0, 0, 0), -- Fondo negro
     Size = UDim2.new(1, 0, 0, 30),
     Parent = container,
-    Text = "",
+    Text = "", -- 
     AutoButtonColor = false,
     LayoutOrder = order
 }, {
     Create("UIStroke", {
         ApplyStrokeMode = 1,
-        Color = Color3.new(1, 1, 1) 
+        Color = Color3.fromRGB(128, 0, 128), 
+        Thickness = 2 ñ
     }),
     Create("UICorner", {
-        CornerRadius = UDim.new(0, 4)
- 
+        CornerRadius = UDim.new(0, 4) 
     }),
     Create("TextLabel", {
         BackgroundTransparency = 1, 
         Position = UDim2.new(0, 10, 0.5, -8),
         Size = UDim2.new(1, -10, 0, 14),
-        Font = window.Font,
+        Font = Enum.Font.RobotoMono,
         Text = buttonTitle,
         TextColor3 = Color3.new(1, 1, 1), 
         TextSize = 14,
         TextXAlignment = Enum.TextXAlignment.Left
-                    }),
+    }),
                     Create("ImageLabel", {
                         BackgroundTransparency = 1,
                         Position = UDim2.new(1, -30, 0.5, -12),
