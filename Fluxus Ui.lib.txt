@@ -36,48 +36,10 @@ end
 
 function lib:CreateWindow(title)
     local window = {
-        Font = Enum.Font.RobotoMono,
-        AccentColor = Color3.fromRGB(255, 85, 85)
+        Font = Enum.Font.Code, -- Cambiado a fuente estilo "code"
+        AccentColor = Color3.fromRGB(255, 165, 0) -- Cambiado a color naranja
     }
     local hidden = false;
-
-    local MainFrame = Create("Frame", {
-    BackgroundColor3 = Color3.fromRGB(19, 21, 25),
-    BorderSizePixel = 0,
-    Size = UDim2.new(0, 600, 0, 300),
-    Position = UDim2.new(0.5, -300, 0.5, -150),
-    Parent = GUI,
-    ClipsDescendants = true
-}, {
-    -- Imagen de fondo
-    Create("ImageLabel", {
-        BackgroundTransparency = 1,
-        Size = UDim2.new(1, 0, 1, 0),
-        Position = UDim2.new(0, 0, 0, 0),
-        Image = "rbxassetid://17247294055",
-        ScaleType = Enum.ScaleType.Stretch, 
-        Parent = MainFrame
-    }),
-    Create("UICorner", {
-        CornerRadius = UDim.new(0, 3)
-    }),
-    Create("TextLabel", {
-        BackgroundTransparency = 1,
-        Size = UDim2.new(1, -20, 0, 25),
-        Position = UDim2.new(0, 25, 0, 1),
-        Text = title,
-        Font = Enum.Font.Roboto,
-        TextColor3 = Color3.fromRGB(243, 243, 243),
-        TextSize = 13,
-        TextXAlignment = Enum.TextXAlignment.Left
-    }),
-    Create("ImageLabel", {
-        Position = UDim2.new(0, 3, 0, 3),
-        Size = UDim2.new(0, 20, 0, 20),
-        BackgroundTransparency = 1,
-        Image = "rbxassetid://9483813933"
-    })
-})
 
     local ToolTip = Create("TextLabel", {
         BackgroundColor3 = Color3.fromRGB(13, 14, 16),
@@ -87,7 +49,7 @@ function lib:CreateWindow(title)
         TextTransparency = 1,
         Font = window.Font,
         TextSize = 14,
-        TextColor3 = Color3.new(1, 1, 1),
+        TextColor3 = window.AccentColor, -- Cambiado a color naranja
         LineHeight = 1.15,
         Parent = GUI,
         ZIndex = 99,
@@ -107,6 +69,8 @@ function lib:CreateWindow(title)
             Transparency = 1
         })
     })
+    -- Continúa el resto del script
+
     function tooltipFollow()
         RS.RenderStepped:Connect(function()
             ToolTip.Position = UDim2.new(0, UIS:GetMouseLocation().X + 20, 0, UIS:GetMouseLocation().Y + 30);
