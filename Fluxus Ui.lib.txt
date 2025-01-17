@@ -204,15 +204,16 @@ function lib:CreateWindow(title)
     Size = UDim2.new(1, -4, 1, -27),
     ClipsDescendants = true,
     Parent = MainFrame
-
+}, {
     Create("ImageLabel", { -- Imagen de fondo
         BackgroundTransparency = 1,
         Size = UDim2.new(1, 0, 1, 0),
         Position = UDim2.new(0, 0, 0, 0),
         Image = "http://www.roblox.com/asset/?id=17247294032", -- ID de la imagen
-        ImageColor3 = Color3.new(1, 1, 1),
-        ScaleType = Enum.ScaleType.Stretch
+        ImageColor3 = Color3.new(1, 1, 1), -- Color de la imagen
+        ScaleType = Enum.ScaleType.Stretch -- Estira la imagen para llenar todo el contenedor
     })
+})
 
     local Mnu = Create("Frame", {
         BackgroundColor3 = Color3.fromRGB(13, 14, 16),
