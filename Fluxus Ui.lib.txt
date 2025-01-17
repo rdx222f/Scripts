@@ -476,7 +476,7 @@ local b1 = Create("TextButton", {
         Size = UDim2.new(1, -10, 0, 14),
         Font = window.Font,
         Text = buttonTitle,
-        TextColor3 = Color3.new(1, 1, 1), -- Texto blanco brillante
+        TextColor3 = Color3.new(1, 1, 1), 
         TextSize = 14,
         TextXAlignment = Enum.TextXAlignment.Left
                     }),
@@ -516,7 +516,8 @@ local b1 = Create("TextButton", {
                 t1.State = default or false;
                 callback = callback or function() end
                 local b1 = Create("TextButton", {
-                    BackgroundColor3 = 0.3,
+                    BackgroundTransparency = 0.3, 
+    BackgroundColor3 = Color3.fromRGB(0, 0, 0), 
                     Size = UDim2.new(1, 0, 0, 30),
                     Parent = container,
                     Text = "",
@@ -609,7 +610,8 @@ local b1 = Create("TextButton", {
                         CornerRadius = UDim.new(0, 4)
                     }),
                     Create("TextLabel", {
-                        BackgroundTransparency = 1,
+                        BackgroundTransparency = 0.3, 
+    BackgroundColor3 = Color3.fromRGB(0, 0, 0), 
                         Position = UDim2.new(0, 10, 0.5, -8),
                         Size = UDim2.new(1, -10, 0, 14),
                         Font = window.Font,
