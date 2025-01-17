@@ -454,7 +454,7 @@ function lib:CreateWindow(title)
                 callback = callback or function() end
                 local btndebounce = false;
                 local b1 = Create("TextButton", {
-                    BackgroundColor3 = 1,
+                    BackgroundColor3 = 0.3,
                     Size = UDim2.new(1, 0, 0, 30),
                     Parent = container,
                     Text = "",
@@ -514,7 +514,7 @@ function lib:CreateWindow(title)
                 t1.State = default or false;
                 callback = callback or function() end
                 local b1 = Create("TextButton", {
-                    BackgroundColor3 = 1,
+                    BackgroundColor3 = 0.3,
                     Size = UDim2.new(1, 0, 0, 30),
                     Parent = container,
                     Text = "",
