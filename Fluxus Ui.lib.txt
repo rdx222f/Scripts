@@ -65,7 +65,7 @@ function lib:CreateWindow(title)
         }),
         Create("UIStroke", {
             ApplyStrokeMode = 1,
-            Color = Color3.fromRGB(23, 25, 29),
+            Color = Color3.fromRGB(0, 0, 255),
             Transparency = 1
         })
     })
@@ -251,6 +251,7 @@ function lib:CreateWindow(title)
         Size = UDim2.new(1, -135, 1, 0),
         ZIndex = 5,
         Parent = Container
+v
     })
 
     local selectedPage = nil;
@@ -392,7 +393,7 @@ function lib:CreateWindow(title)
                 }),
                 Create("UIStroke", {
                     ApplyStrokeMode = 1,
-                    Color = Color3.fromRGB(24, 25, 30)
+                    Color = Color3.fromRGB(0, 0, 255)
                 })
             })
 
@@ -538,7 +539,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color = t1.State and window.AccentColor or Color3.fromRGB(24, 25, 30)
+                        Color = t1.State and window.AccentColor or Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -592,7 +593,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color = Color3.fromRGB(24, 25, 30)
+                        Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -622,7 +623,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color =Color3.fromRGB(24, 25, 30)
+                        Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -665,7 +666,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color = Color3.fromRGB(24, 25, 30)
+                        Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -696,7 +697,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color =Color3.fromRGB(24, 25, 30)
+                        Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -712,7 +713,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color =Color3.fromRGB(24, 25, 30)
+                        Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -835,7 +836,7 @@ function lib:CreateWindow(title)
                     }, {
                         Create("UIStroke", {
                             ApplyStrokeMode = 1,
-                            Color = Color3.fromRGB(24, 25, 30)
+                            Color = Color3.fromRGB(0, 0, 255)
                         }),
                         Create("UICorner", {
                             CornerRadius = UDim.new(0, 4)
@@ -903,7 +904,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color = Color3.fromRGB(24, 25, 30)
+                        Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
@@ -929,7 +930,7 @@ function lib:CreateWindow(title)
                 }, {
                     Create("UIStroke", {
                         ApplyStrokeMode = 1,
-                        Color =Color3.fromRGB(24, 25, 30)
+                        Color = Color3.fromRGB(0, 0, 255)
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(1, 0)
