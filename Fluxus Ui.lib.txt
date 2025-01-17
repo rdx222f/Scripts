@@ -14,16 +14,6 @@ GUI.Parent = game.CoreGui;
 GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
 GUI.IgnoreGuiInset = true
 
--- Fondo con imagen
-local BackgroundImage = Instance.new("ImageLabel")
-BackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Tamaño que cubre toda la pantalla
-BackgroundImage.Position = UDim2.new(0, 0, 0, 0) -- Posición en la esquina superior izquierda
-BackgroundImage.BackgroundTransparency = 1 -- Fondo transparente
-BackgroundImage.Image = "http://www.roblox.com/asset/?id=17247294032" -- URL de la imagen
-BackgroundImage.ScaleType = Enum.ScaleType.Cover -- Ajusta la imagen para cubrir todo el fondo
-BackgroundImage.ZIndex = 0 -- Asegura que la imagen esté detrás de todo
-BackgroundImage.Parent = GUI -- Añade la imagen al GUI principal
-
 function Create(instance, properties, children)
     local obj = Instance.new(instance)
     for i, v in pairs(properties or {}) do
@@ -108,6 +98,13 @@ function lib:CreateWindow(title)
         Position = UDim2.new(0.5, -300, 0.5, -150),
         Parent = GUI
     }, {
+        Create("ImageLabel", { -- Agregamos un fondo de imagen
+        BackgroundTransparency = 1,
+        Size = UDim2.new(1, 0, 1, 0),
+        Position = UDim2.new(0, 0, 0, 0),
+        Image = "http://www.roblox.com/asset/?id=17247294032", -- Reemplaza con el ID de tu imagen
+        ScaleType = Enum.ScaleType.Stretch -- Ajusta la imagen al tamaño del marco
+    }),
         Create("TextLabel", {
             BackgroundTransparency = 1,
             Size = UDim2.new(1, -20, 0, 25),
