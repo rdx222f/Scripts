@@ -198,22 +198,22 @@ function lib:CreateWindow(title)
     end)
 
     local Container = Create("Frame", {
-    BackgroundTransparency = 1,
+    BackgroundTransparency = 1, -- Hace transparente el fondo
     BorderSizePixel = 0,
     Position = UDim2.new(0, 2, 0, 25),
     Size = UDim2.new(1, -4, 1, -27),
     ClipsDescendants = true,
     Parent = MainFrame
 }, {
-    -- Imagen de fondo
+    
     Create("ImageLabel", { 
         BackgroundTransparency = 1,
         Size = UDim2.new(1, 0, 1, 0),
         Position = UDim2.new(0, 0, 0, 0),
-        Image = "http://www.roblox.com/asset/?id=17247294032",
+        Image = "http://www.roblox.com/asset/?id=17247294032", 
         ScaleType = Enum.ScaleType.Stretch 
+    })
 })
-
     local Mnu = Create("Frame", {
         BackgroundColor3 = Color3.fromRGB(13, 14, 16),
         BorderSizePixel = 0,
