@@ -466,9 +466,9 @@ local b1 = Create("TextButton", {
 }, {
     Create("UIStroke", {
     ApplyStrokeMode = 1,
-    Color = Color3.fromRGB(255, 0, 255), 
+    Color = Color3.fromRGB(204, 153, 255),
     Thickness = 2 
-    }),
+}),
     Create("UICorner", {
         CornerRadius = UDim.new(0, 4)
     }),
@@ -605,8 +605,9 @@ local b1 = Create("TextButton", {
                     LayoutOrder = order
                 }, {
                     Create("UIStroke", {
-                        ApplyStrokeMode = 1,
-                        Color = Color3.fromRGB(0, 0, 255)
+    ApplyStrokeMode = 1,
+    Color = Color3.fromRGB(204, 153, 255),
+    Thickness = 2
                     }),
                     Create("UICorner", {
                         CornerRadius = UDim.new(0, 4)
