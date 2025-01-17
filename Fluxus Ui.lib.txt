@@ -465,20 +465,20 @@ local b1 = Create("TextButton", {
     LayoutOrder = order
 }, {
     Create("UIStroke", {
-        ApplyStrokeMode = 1,
-        Color = Color3.fromRGB(128, 0, 128), -- Morado (RGB: 128, 0, 128)
-        Thickness = 2 -- Grosor del borde
+    ApplyStrokeMode = 1,
+    Color = Color3.fromRGB(255, 0, 255), 
+    Thickness = 2 
     }),
     Create("UICorner", {
-        CornerRadius = UDim.new(0, 4) -- Bordes redondeados
+        CornerRadius = UDim.new(0, 4)
     }),
     Create("TextLabel", {
-        BackgroundTransparency = 1, -- Fondo del texto transparente
+        BackgroundTransparency = 1, 
         Position = UDim2.new(0, 10, 0.5, -8),
         Size = UDim2.new(1, -10, 0, 14),
-        Font = Enum.Font.RobotoMono, -- Usa una fuente clara
+        Font = Enum.Font.Code,
         Text = buttonTitle,
-        TextColor3 = Color3.new(1, 1, 1), -- Texto blanco brillante
+        TextColor3 = Color3.new(1, 1, 1),
         TextSize = 14,
         TextXAlignment = Enum.TextXAlignment.Left
     }),
