@@ -93,19 +93,16 @@ function lib:CreateWindow(title)
 
     local MainFrame = Create("Frame", {
     BackgroundTransparency = 1,
-    Size = UDim2.new(0, 600, 0, 300), 
-    Position = UDim2.new(0.5, -300, 0.5, -150), 
-    AnchorPoint = Vector2.new(0.5, 0.5), 
-    ZIndex = 2,
-    Parent = GUI 
+    Size = UDim2.new(0, 600, 0, 300),
+    Position = UDim2.new(0.5, -300, 0.5, -150),
+    Parent = GUI
 }, {
     Create("ImageLabel", { 
         BackgroundTransparency = 1,
-        Size = UDim2.new(1, 0, 1, 0), 
+        Size = UDim2.new(1, 0, 1, 0),
         Position = UDim2.new(0, 0, 0, 0),
         Image = "http://www.roblox.com/asset/?id=17247294032",
-        ScaleType = Enum.ScaleType.Stretch,
-        ZIndex = 1
+        ScaleType = Enum.ScaleType.Stretch
     }),
             Create("TextLabel", {
             BackgroundTransparency = 1,
